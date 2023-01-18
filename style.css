@@ -210,3 +210,11 @@ p {
     text-align: center;
     margin: 0 0 10px 0;
 }
+
+#product1 .product-tittle, .product-description {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-family: 'League Spartan', sans-serif;
+    color: #000;
+}
