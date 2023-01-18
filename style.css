@@ -14,6 +14,10 @@ root {
     --white: #fff;
 }
 
+body {
+    width: 100vh;
+}
+
 h1 {
     font-size: 60px;
     line-height: 64px;
@@ -43,15 +47,14 @@ p {
 }
 
 .section-p1 {
+    width: 100vw;
+    height: auto;
     padding: 40px 80px;
+    margin: 0;
 }
 
 .section-m1 {
     margin: 40px 0;
-}
-
-body {
-    width: 100vh;
 }
 
 #header {
@@ -113,8 +116,8 @@ body {
     width: 100vw;
     height: 80vh;
     background-image: url("./images/jordan.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1666px;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -150,4 +153,60 @@ body {
 #hero button:hover {
     background: #fff;
     color: #f5784a;
+}
+
+#feature {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .feature-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#feature .feature-box:hover {
+    border: 1px solid #f5784a;
+    color: #f5784a;
+}
+
+#feature .feature-box h6 {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+#feature .feature-box h6:hover {
+    background-color: #f5784a;
+    color: #000;
+}
+
+#feature .feature-box img {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#feature .title {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
 }
