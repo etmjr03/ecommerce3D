@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdiShoes 3D</title>
+    <link rel="shortcut icon" href="./images/logoES.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
-    <link rel="shortcut icon" href="./images/logoES.svg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <section id="header">
@@ -87,20 +88,229 @@
 
         <div class="product-container">
             <div class="product">
-                <img src="./images/feature/jordan.svg" alt="">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/jordan4.glb"
+                    ios-src="./assets/jordan4.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
                 <div class="description">
-                    <span>Air Jordan</span>
-                    <h5>Tênis Air Jordan 1 High</h5>
+                    <span class="span-product">Nike</span>
+                    <h5>Air Jordan 4 - Travis Scott</h5>
                     <div class="star">
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
                     </div>
                     <h4>R$ 1200,00</h4>
                     <a href="">
-                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/Air_Force.glb"
+                    ios-src="./assets/Air_Force.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
+                <div class="description">
+                    <span class="span-product">Nike</span>
+                    <h5>Tênis Air Force 1 - Fast</h5>
+                    <div class="star">
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4>R$ 700,00</h4>
+                    <a href="">
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/Jordan1_lost_and_found.glb"
+                    ios-src="./assets/Jordan1_lost_and_found.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
+                <div class="description">
+                    <span class="span-product">Nike</span>
+                    <h5>Air Jordan 1 - Lost And Found</h5>
+                    <div class="star">
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4>R$ 1900,00</h4>
+                    <a href="">
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/nike_zoom.glb"
+                    ios-src="./assets/nike_zoom.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
+                <div class="description">
+                    <span class="span-product">Nike</span>
+                    <h5>Tênis Nike Air Zoom</h5>
+                    <div class="star">
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4>R$ 750,00</h4>
+                    <a href="">
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/adidas.glb"
+                    ios-src="./assets/adidas.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
+                <div class="description">
+                    <span class="span-product">Adidas</span>
+                    <h5>Tênis Adidas Dragon</h5>
+                    <div class="star">
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4>R$ 400,00</h4>
+                    <a href="">
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <model-viewer
+                    class="img-product"
+                    ar
+                    ar-modes="scene-viewer quick-look webxr"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    src="./images/shoes/adidas_nmd.glb"
+                    ios-src="./assets/adidas_nmd.usdz"
+                    poster=""
+                    shadow-intensity="1"
+                    reveal="auto"
+                    camera-controls
+                    auto-rotate
+                    >
+
+                    <button slot="ar-button" class="button-ar">
+                        Ativar realidade aumentada
+                    </button>
+
+                </model-viewer>
+                <div class="description">
+                    <span class="span-product">Adidas</span>
+                    <h5>Tênis Adidas NMD R1</h5>
+                    <div class="star">
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                        <span id="star-product" class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4>R$ 999,00</h4>
+                    <a href="">
+                        <span id="cart-product" class="material-symbols-outlined">shopping_cart</span>
                     </a>
                 </div>
             </div>
