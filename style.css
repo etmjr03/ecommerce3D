@@ -9,9 +9,10 @@ root {
     --gray: #222;
     --gray-p: #465b52;
     --cyan-nav: #8000ff;
-    --shadow-nav: rgba(0, 0, 0, 0.06);
+    --shadow-nav: #0000000f;
     --purple: #8000ff;
     --white: #fff;
+    --copyright: #dcdcdc;
 }
 
 body {
@@ -156,6 +157,26 @@ p {
     color: #f5784a;
 }
 
+.button-news {
+    width: 100px;
+    height: 50px;
+    background: #f5784a;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.button-news:hover {
+    background: #fff;
+    color: #f5784a;
+}
+
 #feature {
     margin-left: auto;
     margin-right: auto;
@@ -229,7 +250,7 @@ p {
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #222;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
     margin: 20px 15px;
@@ -401,4 +422,89 @@ p {
     color: #000;
     font-size: 40px;
     font-weight: 600;
+}
+
+#newsletter {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-image: url("./images/banner-nike.jpg");
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#newsletter p span {
+    color: #f5784a;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#newsletter input {
+    width: 100%px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h4 {
+    font-size: 32px;
+    color: var(--gray);
+}
+
+footer p {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+footer .col {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .col img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .col a {
+    font-size: 24px;
+    color: var(--gray);
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer .col .logo-footer {
+    width: 150px;
+    height: 150px;
+}
+
+footer .col .redes-sociais {
+    margin-top: 50px;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 5px;
+    color: #c3c3c3;
+    display: flex;
+    justify-content: center;
+}
+
+.copy-cor {
+    font-size: 20px;
 }
