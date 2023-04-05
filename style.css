@@ -15,8 +15,13 @@ root {
     --copyright: #dcdcdc;
 }
 
+html {
+    width: fit-content;
+}
+
 body {
     width: 100%;
+    justify-content: center;
 }
 
 h1 {
@@ -119,11 +124,11 @@ p {
     height: 80vh;
     background-image: url("./images/jordan.jpg");
     background-size: cover;
-    max-width: 1666px;
+    background-position: center;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
-    align-items: center flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -326,7 +331,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("./images/banner-nike.jpg");
+    background-image: url("./images/banner-vans.png");
     background-size: cover;
     background-position: center;
 }
@@ -335,7 +340,7 @@ p {
     padding: 20px;
     margin: 10px 0;
     color: #f5784a;
-    background: rgba(0, 0, 0, 0.387);
+    background: rgba(0, 0, 0, 1);
     font-weight: 700;
     border-radius: 5px;
 }
@@ -396,13 +401,45 @@ p {
     padding: 0 80px;
 }
 
-#banner3 .banner-box {
+#banner3 .banner-box1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: start;
-    background: #f5784a;
+    background-image: url("./images/desconto.jpg");
+    width: 25vw;
+    height: 20vh;
+    margin-bottom: 20px;
+    min-width: 25%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner3 .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    background-image: url("./images/frete.jpg");
+    width: 25vw;
+    height: 20vh;
+    margin-bottom: 20px;
+    min-width: 25%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner3 .banner-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    background-image: url("./images/adidas.jpg");
     width: 25vw;
     height: 20vh;
     margin-bottom: 20px;
@@ -413,15 +450,17 @@ p {
 }
 
 #banner3 h2 {
-    color: #fff;
+    color: #000;
     font-size: 50px;
     font-weight: 700;
+    background: #ffffffc8;
 }
 
 #banner3 h3 {
     color: #000;
     font-size: 40px;
     font-weight: 600;
+    background: #ffffffc8;
 }
 
 #newsletter {
@@ -434,6 +473,7 @@ p {
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #newsletter p span {
