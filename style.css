@@ -555,3 +555,9 @@ footer .col .redes-sociais {
     width: 100%;
     height: 50px;
 }
+
+@media (max-width: 500px) {
+    #product1 .product {
+        width: 100%;
+    }
+}
