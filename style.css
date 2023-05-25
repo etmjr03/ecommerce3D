@@ -560,4 +560,8 @@ footer .col .redes-sociais {
     #product1 .product {
         width: 100%;
     }
+
+    #sm-banner {
+        justify-content: center;
+    }
 }
